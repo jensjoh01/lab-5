@@ -12,6 +12,7 @@ For TODO item, be sure to change it to say DONE when you have successfully compl
 
 // DONE: Write your code here
 function sum(a,b){ //eslint-disable-line
+
   var addition = (a + b);
   var message = ('The sum of ' + a + ' and ' + b + ' is ' + addition + '.');
   return [addition, message];
@@ -122,3 +123,9 @@ function multiplyArray(testArray){ //eslint-disable-line
 testMultiplyArray(2,3,4);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
+document.getElementById('sum').innerHTML = sum(4,7);
+document.getElementById('multiply').innerHTML = multiply(5,9);
+document.getElementById('sumAndMultiplyA').innerHTML = sumAndMultiply(4,7,5)[0,1];
+document.getElementById('sumAndMultiplyB').innerHTML = sumAndMultiply(4,7,5)[2,3];
+document.getElementById('sumArray').innerHTML = sumArray([2,3,4])[1];
+document.getElementById('multiplyArray').innerHTML = multiplyArray([2,3,4])[1];
